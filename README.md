@@ -54,7 +54,7 @@ list.add(5);
 System.out.println(Arrays.toString(list.toArray()));
 ```
 
-# Hash Map
+# [Hash Map](Basics/src/LearningHashMaps.java)
 ## number of keys present in hash map
 ```java
 System.out.println("Length of hash map is "+hashmap.size());
@@ -98,3 +98,21 @@ for (Integer key : hashmap.keySet()) {
         <td>allows adding one Entry with null as key as well as many entries with null as value.</td>
     </tr>
 </table>
+
+# [Queue](Basics/src/LearningQueues.java)
+
+Since Queue is an interface, objects cannot be created of the type queue. We always need a class which extends this list in order to create an object.
+
+```java
+// Declaration of queue
+Queue<String> queue = new LinkedList<>();
+
+// Adding elements
+queue.add("Element");
+
+// Popping elements
+queue.remove();
+
+// Peeking at the top element
+queue.peek();
+```
