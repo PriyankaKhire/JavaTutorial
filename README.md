@@ -55,33 +55,37 @@ System.out.println(Arrays.toString(list.toArray()));
 ```
 
 # [Hash Map](Basics/src/LearningHashMaps.java)
-## number of keys present in hash map
 ```java
-System.out.println("Length of hash map is "+hashmap.size());
-```
-## Key = String, Val = int
-```java
-HashMap<String, Integer> hm = new HashMap<String, Integer>();
-hm.put("key1", 1);
-hm.put("key2", 2);
-System.out.println(hm.get("key1"));
-System.out.println(hm.get("key2"));
-```
-## Key = Integer, Val = List of integers
-```java
-HashMap<Integer, List<Integer>> hashmap = new HashMap<Integer, List<Integer>>();
-hashmap.put(5, new ArrayList<>(Arrays.asList(2, 4)));
-hashmap.put(4, new ArrayList<>());
-hashmap.put(3, new ArrayList<>());
-hashmap.put(2, new ArrayList<>(Arrays.asList(1)));
-hashmap.put(1, new ArrayList<>(Arrays.asList(0, 3)));
-hashmap.put(0, new ArrayList<>(Arrays.asList(1)));
-```
-## Iterating through the keys of hash map
-```java
-for (Integer key : hashmap.keySet()) {
-    System.out.println("key is "+key+" value is "+hashmap.get(key));
+// Declaration of hash map
+HashMap<String, String> hashMap = new HashMap<String, Integer>();
+
+// Adding key in hash map
+hashMap.put("key", "value");
+
+// Getting key from hash map
+hashMap.get("key"); // Output -> "value"
+
+// Total number of keys present in hash map
+hashMap.size(); // Output -> 1
+
+// Iterating through hash map
+for(String key : hashMap.keySet()) {
+  System.out.println("The key is = " + key + " The value is = " + hashMap.get(key));
 }
+
+// If key present in hash map
+hashMap.containsKey("key"); // Output -> true
+```
+## Types of Hash Maps
+```java
+// Key = String, Val = int
+HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
+hashMap.put("key", 1);
+
+// Key = Integer, Val = List of integers
+HashMap<Integer, List<Integer>> hashmap = new HashMap<Integer, List<Integer>>();
+hashmap.put(1, new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5)));
+hashmap.put(2, new ArrayList<>());
 ```
 ## Differences Between Hashtable and HashMap
 <table>
