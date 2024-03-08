@@ -131,3 +131,18 @@ PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>();
 // Max Heap
 PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(Comparator.reverseOrder());
 ```
+
+# Stack
+```java
+// Declaration of Stack
+Stack<String> stack = new Stack<Integer>();
+
+// Pushing element 
+stack.push("Element");
+
+// Popping element
+stack.pop();
+
+// Peeking at the top of Stack
+stack.peek();
+```
