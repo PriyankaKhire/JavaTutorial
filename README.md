@@ -24,34 +24,36 @@ int len = string.length();
 System.out.println(len);
 ```
 
-# List
-
-## List is empty -> returns true or false.
+# [Arrays](Basics/src/ArrayAndLists.java)
 ```java
-list.isEmpty();
+// Declaring array and allocating memory to it
+int intArray[] = new int[5];
+
+// Pre-populating array
+int newIntArray[] = {1,2,3,4,5};
+
+// Adding element to array
+intArray[0] = 1;
 ```
-
-## if list contains an element
+# [List](Basics/src/ArrayAndLists.java)
 ```java
-System.out.println(list.contains(5));
-```
+// Declaring List
+List<Integer> list = new ArrayList<Integer>();
 
-## List that is not initialized with items.
-```java
-List<Integer> l = new ArrayList<Integer>();
-l.add(1);
-l.add(2);
+// Pre-populated list
+List<Integer> integerList = Arrays.asList(1,2,3,4,5);
 
-// Print the contents of the list
-System.out.println(Arrays.toString(l.toArray()));
-```
-## List that is initialized with items and we can add items to it later.
-```java
-List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4));
-list.add(5);
+// Adding element to list
+list.add(1);
 
-// Display the contents of the list
-System.out.println(Arrays.toString(list.toArray()));
+// Removing element at index
+list.remove(index);
+
+// Checking list empty
+list.isEmpty(); // Output -> Boolean true or false
+
+// If list contains element 
+list.contains(element) // Output -> Boolean true or false 
 ```
 
 # [Hash Map](Basics/src/LearningHashMaps.java)
