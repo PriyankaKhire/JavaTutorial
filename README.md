@@ -83,3 +83,18 @@ for (Integer key : hashmap.keySet()) {
     System.out.println("key is "+key+" value is "+hashmap.get(key));
 }
 ```
+## Differences Between Hashtable and HashMap
+<table>
+    <tr>
+        <th>HashTable</th>
+        <th>HashMap</th>
+    </tr>
+    <tr>
+        <td>thread-safe and can be shared between multiple threads in the application</td>
+        <td>can’t be accessed by multiple threads without additional synchronization code. We can use Collections.synchronizedMap() to make a thread-safe version of a HashMap.</td>
+    </tr>
+    <tr>
+        <td>doesn’t allow null at all</td>
+        <td>allows adding one Entry with null as key as well as many entries with null as value.</td>
+    </tr>
+</table>
