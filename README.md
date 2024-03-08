@@ -116,3 +116,12 @@ queue.remove();
 // Peeking at the top element
 queue.peek();
 ```
+
+# [Heap](Basics/src/Heap.java)
+```java
+// Min Heap
+PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>();
+
+// Max Heap
+PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(Comparator.reverseOrder());
+```
